@@ -1,0 +1,12 @@
+# secrets
+.env
+env.json
+
+# modules and ide
+.idea
+node_modules
+
+# compiled files
+*.js
+
+npm-debug.log

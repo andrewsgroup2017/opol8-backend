@@ -1,0 +1,51 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run create -- --watch",
+    "create": "wt create index --secrets-file .env --bundle",
+    "serve": "wt serve index --secrets-file .env",
+    "update": "wt update index --secrets-file .env --bundle",
+    "ngrok": "npm run serve && ngrok 8080"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/pubsub": "^0.19.0",
+    "@slack/client": "^3.14.1",
+    "@types/request-promise": "^4.1.39",
+    "babel-polyfill": "^6.26.0",
+    "body-parser": "^1.17.2",
+    "chat-engine": "^0.9.14",
+    "cors": "^2.8.4",
+    "debug": "^2.6.8",
+    "dotenv": "^6.0.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "firebase-admin": "^5.12.1",
+    "firebase-functions": "^1.1.0",
+    "firebase-functions-helper": "^0.5.8",
+    "morgan": "^1.8.2",
+    "pubnub": "^4.21.2",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.2",
+    "vm2": "^3.5.2",
+    "webtask-tools": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/debug": "^0.0.29",
+    "@types/express": "^4.0.35",
+    "@types/mocha": "^2.2.44",
+    "@types/node": "^7.0.31",
+    "@types/slack-node": "^0.1.1",
+    "@webtask/serverless-webtasks": "^1.0.1",
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "mocha": "^4.0.1",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.3.4"
+  }
+}
